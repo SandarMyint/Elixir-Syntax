@@ -13,6 +13,9 @@ defmodule Test do
 
   """
   def hello do
-    :world
+    name = IO.gets("What is your name?") |> String.trim
+    IO.puts "Hello #{name} !"
   end
+
+  
 end
